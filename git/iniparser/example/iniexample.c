@@ -73,7 +73,7 @@ int parse_ini_file(char * ini_name)
 
     /* Get pizza attributes */
     printf("Pizza:\n");
-
+	// 取ini中 pizza:ham ,如果没有这项就会将后面的 -1作为默认值
     b = iniparser_getboolean(ini, "pizza:ham", -1);
     printf("Ham:       [%d]\n", b);
     b = iniparser_getboolean(ini, "pizza:mushrooms", -1);
