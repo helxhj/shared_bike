@@ -11,7 +11,7 @@ int main(int argc,char** argv){ // 配置文件直接通过参数进行传递
 	}
 	
 	Iniconfig ini; // 解析文件
-	if(ini.loadfile(argv[1])) // 加载并解析配置文件
+	if(!ini.loadfile(argv[1])) // 加载并解析配置文件
 	{
 		fprintf(stderr,"加载配置文件失败，加载文件:%s\n",argv[1]);
 		return -2;
@@ -21,8 +21,8 @@ int main(int argc,char** argv){ // 配置文件直接通过参数进行传递
 	_st_env_config config = ini.getconfig();
 	// 打印一下结构体中的数据
 	printf("[database]:\nip\t: %s \nport\t: %d\nuser\t: %s\npwd\t: %s\ndb\t: %s\n[server]:\nsvr_port\t: %d\n",
-			config.db_ip , config.db_port , config.db_user , config.db_pwd , 
-			config.db_name , config.svr_port);
+			config.db_ip.c_str() , config.db_port , config.db_user.c_str() , config.db_pwd.c_str() , 
+			config.db_name.c_str() , config.svr_port);
 	
 	return 0;
 }

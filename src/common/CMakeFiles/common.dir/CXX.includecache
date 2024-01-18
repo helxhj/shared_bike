@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../third/include/iniparser/dictionary.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+../third/include/iniparser/iniparser.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dictionary.h
+../third/include/iniparser/dictionary.h
+
+/home/helx/code/shared_bike/src/common/configdef.h
+
+/home/helx/code/shared_bike/src/common/iniconfig.cpp
+iniconfig.h
+/home/helx/code/shared_bike/src/common/iniconfig.h
+iniparser/iniparser.h
+-
+
+/home/helx/code/shared_bike/src/common/iniconfig.h
+string
+-
+configdef.h
+/home/helx/code/shared_bike/src/common/configdef.h
+
