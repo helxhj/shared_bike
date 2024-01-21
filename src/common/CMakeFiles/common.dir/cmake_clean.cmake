@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/common.dir/Logger.cpp.o"
   "CMakeFiles/common.dir/iniconfig.cpp.o"
   "libcommon.pdb"
   "libcommon.a"

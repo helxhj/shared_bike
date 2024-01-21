@@ -171,6 +171,33 @@ common/fast:
 	cd /home/helx/code/shared_bike/src && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
 .PHONY : common/fast
 
+Logger.o: Logger.cpp.o
+
+.PHONY : Logger.o
+
+# target to build an object file
+Logger.cpp.o:
+	cd /home/helx/code/shared_bike/src && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/Logger.cpp.o
+.PHONY : Logger.cpp.o
+
+Logger.i: Logger.cpp.i
+
+.PHONY : Logger.i
+
+# target to preprocess a source file
+Logger.cpp.i:
+	cd /home/helx/code/shared_bike/src && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/Logger.cpp.i
+.PHONY : Logger.cpp.i
+
+Logger.s: Logger.cpp.s
+
+.PHONY : Logger.s
+
+# target to generate assembly for a file
+Logger.cpp.s:
+	cd /home/helx/code/shared_bike/src && $(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/Logger.cpp.s
+.PHONY : Logger.cpp.s
+
 iniconfig.o: iniconfig.cpp.o
 
 .PHONY : iniconfig.o
@@ -211,6 +238,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... common"
+	@echo "... Logger.o"
+	@echo "... Logger.i"
+	@echo "... Logger.s"
 	@echo "... iniconfig.o"
 	@echo "... iniconfig.i"
 	@echo "... iniconfig.s"

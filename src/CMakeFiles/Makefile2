@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/helx/code/shared_bike/src
 CMakeFiles/shared_bike.dir/all: common/CMakeFiles/common.dir/all
 	$(MAKE) -f CMakeFiles/shared_bike.dir/build.make CMakeFiles/shared_bike.dir/depend
 	$(MAKE) -f CMakeFiles/shared_bike.dir/build.make CMakeFiles/shared_bike.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=3,4 "Built target shared_bike"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=4,5 "Built target shared_bike"
 .PHONY : CMakeFiles/shared_bike.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/shared_bike.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/shared_bike.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/shared_bike.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 0
 .PHONY : CMakeFiles/shared_bike.dir/rule
@@ -126,7 +126,7 @@ common/preinstall:
 common/CMakeFiles/common.dir/all:
 	$(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/depend
 	$(MAKE) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=1,2 "Built target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=1,2,3 "Built target common"
 .PHONY : common/CMakeFiles/common.dir/all
 
 # Include target in all.
@@ -136,7 +136,7 @@ all: common/CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 common/CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/helx/code/shared_bike/src/CMakeFiles 0
 .PHONY : common/CMakeFiles/common.dir/rule

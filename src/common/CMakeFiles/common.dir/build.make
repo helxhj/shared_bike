@@ -57,9 +57,22 @@ include common/CMakeFiles/common.dir/progress.make
 # Include the compile flags for this target's objects.
 include common/CMakeFiles/common.dir/flags.make
 
+common/CMakeFiles/common.dir/Logger.cpp.o: common/CMakeFiles/common.dir/flags.make
+common/CMakeFiles/common.dir/Logger.cpp.o: common/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object common/CMakeFiles/common.dir/Logger.cpp.o"
+	cd /home/helx/code/shared_bike/src/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/Logger.cpp.o -c /home/helx/code/shared_bike/src/common/Logger.cpp
+
+common/CMakeFiles/common.dir/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/common.dir/Logger.cpp.i"
+	cd /home/helx/code/shared_bike/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/helx/code/shared_bike/src/common/Logger.cpp > CMakeFiles/common.dir/Logger.cpp.i
+
+common/CMakeFiles/common.dir/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/common.dir/Logger.cpp.s"
+	cd /home/helx/code/shared_bike/src/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/helx/code/shared_bike/src/common/Logger.cpp -o CMakeFiles/common.dir/Logger.cpp.s
+
 common/CMakeFiles/common.dir/iniconfig.cpp.o: common/CMakeFiles/common.dir/flags.make
 common/CMakeFiles/common.dir/iniconfig.cpp.o: common/iniconfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object common/CMakeFiles/common.dir/iniconfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object common/CMakeFiles/common.dir/iniconfig.cpp.o"
 	cd /home/helx/code/shared_bike/src/common && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/common.dir/iniconfig.cpp.o -c /home/helx/code/shared_bike/src/common/iniconfig.cpp
 
 common/CMakeFiles/common.dir/iniconfig.cpp.i: cmake_force
@@ -72,15 +85,17 @@ common/CMakeFiles/common.dir/iniconfig.cpp.s: cmake_force
 
 # Object files for target common
 common_OBJECTS = \
+"CMakeFiles/common.dir/Logger.cpp.o" \
 "CMakeFiles/common.dir/iniconfig.cpp.o"
 
 # External object files for target common
 common_EXTERNAL_OBJECTS =
 
+common/libcommon.a: common/CMakeFiles/common.dir/Logger.cpp.o
 common/libcommon.a: common/CMakeFiles/common.dir/iniconfig.cpp.o
 common/libcommon.a: common/CMakeFiles/common.dir/build.make
 common/libcommon.a: common/CMakeFiles/common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/helx/code/shared_bike/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcommon.a"
 	cd /home/helx/code/shared_bike/src/common && $(CMAKE_COMMAND) -P CMakeFiles/common.dir/cmake_clean_target.cmake
 	cd /home/helx/code/shared_bike/src/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/common.dir/link.txt --verbose=$(VERBOSE)
 

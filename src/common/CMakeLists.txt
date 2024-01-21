@@ -22,9 +22,12 @@ INCLUDE_DIRECTORIES(../../third/include)
 #库文件
 #将指定目录添加到需要连接的库文件目录下
 LINK_DIRECTORIES(../../third/lib/iniparser) #指定全部路径
+LINK_DIRECTORIES(../../third/lib/log4cpp) #指定全部路径
 
 #指定连接
 #将目标文件与库文件进行链接
 TARGET_LINK_LIBRARIES(common iniparser)
+TARGET_LINK_LIBRARIES(common log4cpp)
+TARGET_LINK_LIBRARIES(common pthread) #将pthread添加进来
 TARGET_LINK_LIBRARIES(common dl)
 

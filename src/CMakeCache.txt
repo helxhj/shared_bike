@@ -201,7 +201,7 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Dependencies for the target
-common_LIB_DEPENDS:STATIC=general;iniparser;general;dl;
+common_LIB_DEPENDS:STATIC=general;iniparser;general;log4cpp;general;pthread;general;dl;
 
 //Value Computed by CMake
 shared_bike_BINARY_DIR:STATIC=/home/helx/code/shared_bike/src

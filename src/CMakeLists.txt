@@ -10,6 +10,7 @@ INCLUDE_DIRECTORIES(../third/include)  #第三方的
 INCLUDE_DIRECTORIES(./common)
 
 LINK_DIRECTORIES(../third/lib/iniparser)
+LINK_DIRECTORIES(../third/lib/log4cpp)
 LINK_DIRECTORIES(./common)
 
 # 收集指定路径下的源文件 文件名 
@@ -25,7 +26,12 @@ ADD_EXECUTABLE(shared_bike  ${SOURCE_FILES})
 SET(CMAME_CXX_FLAGS "${CMAME_CXX_FLAGS}-rdynamic -Wall -m64 -pipe -std=c++0x -lrt -Wno-reorder -Wdeprecated-declarations")
 
 TARGET_LINK_LIBRARIES(shared_bike iniparser)
+#TARGET_LINK_LIBRARIES(shared_bike log4cpp)
+TARGET_LINK_LIBRARIES(shared_bike pthread)
 TARGET_LINK_LIBRARIES(shared_bike common)
+# 上面设置项目名为 shared_bike    PROJECT(shared_bike)
+# 所以直接使用 PROJECT_NAME 来直接代替上面设置的项目名
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} liblog4cpp.a )  
 
 # 增加子目录
 ADD_SUBDIRECTORY(common)

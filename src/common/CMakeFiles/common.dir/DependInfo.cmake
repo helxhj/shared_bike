@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/helx/code/shared_bike/src/common/Logger.cpp" "/home/helx/code/shared_bike/src/common/CMakeFiles/common.dir/Logger.cpp.o"
   "/home/helx/code/shared_bike/src/common/iniconfig.cpp" "/home/helx/code/shared_bike/src/common/CMakeFiles/common.dir/iniconfig.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
